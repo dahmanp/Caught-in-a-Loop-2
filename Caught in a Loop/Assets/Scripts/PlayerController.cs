@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviourPun
 
     [SerializeField] private TextMeshProUGUI Nametag;
 
+    // instance
+    public static PlayerController instance;
+
     void Update()
     {
         if (!photonView.IsMine || dead)

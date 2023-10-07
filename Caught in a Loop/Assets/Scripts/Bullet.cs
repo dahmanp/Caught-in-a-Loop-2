@@ -21,6 +21,7 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Works");
         // did we hit a player?
         // if this is the local player's bullet, damage the hit player
         // we're using client side hit detection

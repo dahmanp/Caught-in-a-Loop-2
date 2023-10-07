@@ -13,10 +13,9 @@ public class GameUI : MonoBehaviour
     public TextMeshProUGUI winText;
     public Image AwinBackground;
     public Image MwinBackground;
+    public Image winBackground;
 
     public static int UIid;
-
-    public PlayerController[] players;
 
     public GameObject LowHealthUI;
 
@@ -75,17 +74,22 @@ public class GameUI : MonoBehaviour
 
     public void SetWinText(string winnerName)
     {
-        MwinBackground.gameObject.SetActive(true);
-        winText.text = winnerName + " was the last one standing.";
+        //winBackground.gameObject.SetActive(true);
+        //winText.text = winnerName + " was the last one standing.";
         winText.gameObject.SetActive(true);
-        /*if (UIid % 2 == 0)
+
+        if (GameManager.instance.alivePlayers == 1)
         {
-            MwinBackground.gameObject.SetActive(true);
-            winText.text = winnerName + " was the last one standing.";
-        } else
-        {
-            AwinBackground.gameObject.SetActive(true);
-            winText.text = winnerName + " was the last one standing.";
-        } */
+            if (PlayerController.instance.team == false)
+            {
+                MwinBackground.gameObject.SetActive(true);
+                winText.text = winnerName + " was the last one standing.";
+            }
+            else
+            {
+                AwinBackground.gameObject.SetActive(true);
+                winText.text = winnerName + " was the last one standing.";
+            }
+        }
     }
 }

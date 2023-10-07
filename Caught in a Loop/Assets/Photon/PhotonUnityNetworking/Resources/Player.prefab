@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6431920184443073951
 RectTransform:
   m_ObjectHideFlags: 0
@@ -432,7 +432,7 @@ MonoBehaviour:
   id: 0
   PlayerMesh: {fileID: 3279088038483261740}
   GunMesh: {fileID: 914848974926143578}
-  shield: {fileID: 5792188089853154933}
+  shield: {fileID: 7493833896462251534, guid: cfa545c01ee5ff249888bb7f4eb05c26, type: 3}
   team: 0
   marenox: {fileID: 2100000, guid: b7dd42c29e6404a4d85de0636422e4b6, type: 2}
   aptiostell: {fileID: 2100000, guid: ea11b6fa664376146a085e0543917520, type: 2}
@@ -458,7 +458,7 @@ MonoBehaviour:
   damage: 20
   curAmmo: 100
   maxAmmo: 100
-  bulletSpeed: 50
+  bulletSpeed: 20
   shootRate: 0
   bulletPrefab: {fileID: 5281207276518304827, guid: cf2377a15e89e374ea5e48548246343f, type: 3}
   bulletSpawnPos: {fileID: 2727076254708392024}
@@ -843,11 +843,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfa545c01ee5ff249888bb7f4eb05c26, type: 3}
---- !u!1 &5792188089853154933 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7493833896462251534, guid: cfa545c01ee5ff249888bb7f4eb05c26, type: 3}
-  m_PrefabInstance: {fileID: 4007797229491052667}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6244716369708189483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7005136101280966480, guid: cfa545c01ee5ff249888bb7f4eb05c26, type: 3}
